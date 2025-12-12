@@ -129,6 +129,7 @@ jobs:
         # 确保当前目录可写
         sudo chmod -R +w ./
         # 复制自定义机型配置文件到源码根目录
+        rm -rf openwrt/package/kernel/mt76/*
         sudo chmod -R 775 $GITHUB_WORKSPACE/configfiles/userpatches/zhoufuli/
         rsync -av --progress $GITHUB_WORKSPACE/configfiles/userpatches/zhoufuli/ openwrt/
         # cp --preserve=all -r $GITHUB_WORKSPACE/configfiles/userpatches/zhoufuli/* openwrt/
