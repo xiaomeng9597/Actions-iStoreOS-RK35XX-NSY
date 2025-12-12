@@ -292,6 +292,7 @@ define Build/Compile
 		M="$(PKG_BUILD_DIR)/mt_wifi_ap" \
 		LINUX_DIR="$(KERNEL_BUILD_DIR)" \
 		$(foreach c, $(PKG_KCONFIG),$(if $(CONFIG_MTK_$c),CONFIG_$(c)=$(CONFIG_MTK_$(c)))) \
+		EXTRA_CFLAGS="-Wno-error=address" \
 		modules
 endef
 
