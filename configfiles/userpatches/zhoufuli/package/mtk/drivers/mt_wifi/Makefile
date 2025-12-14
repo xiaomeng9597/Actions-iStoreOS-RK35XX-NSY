@@ -263,6 +263,7 @@ PKG_CONFIG_DEPENDS:=$(foreach c, $(PKG_KCONFIG),$(if $(CONFIG_MTK_$c),CONFIG_$(c
 EXTRA_CFLAGS += -Wno-error=attributes -Wno-attributes
 EXTRA_CFLAGS += -Wno-error=implicit-fallthrough -Wno-implicit-fallthrough
 EXTRA_CFLAGS += -Wno-error=attribute-warning -Wno-attribute-warning
+EXTRA_CFLAGS += -Wno-error
 
 include $(INCLUDE_DIR)/package.mk
 
