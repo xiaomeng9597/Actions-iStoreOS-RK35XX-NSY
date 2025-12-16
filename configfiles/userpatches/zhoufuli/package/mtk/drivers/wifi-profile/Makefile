@@ -97,11 +97,7 @@ endef
 
 define Package/wifi-profile/install
 	$(INSTALL_DIR) $(1)/lib/wifi/
-	$(INSTALL_DIR) $(1)/sbin/
-
-	$(INSTALL_BIN) ./files/common/wifi_jedi $(1)/sbin/wifi
 	$(INSTALL_BIN) ./files/common/mtwifi.lua $(1)/lib/wifi/
-
 	if [ "$$(CONFIG_WIFI_QUICK_SETTING)" = "y" ] ; then \
 		$(INSTALL_BIN) ./files/common/quick_setting.lua $(1)/lib/wifi/; \
 	fi
