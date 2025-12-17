@@ -26309,7 +26309,7 @@ INT Send_WNM_Notify_Req(
 		}
 
 		NdisZeroMemory(WNMNotifyPeerEntry, sizeof(*WNMNotifyPeerEntry));
-		WNMNotifyPeerEntry->CurrentState = (enum WNM_NOTIFY_STATE)WNM_NOTIFY_REQ;
+		WNMNotifyPeerEntry->CurrentState = WNM_NOTIFY_REQ;
 		WNMNotifyPeerEntry->ControlIndex = APIndex;
 		NdisMoveMemory(WNMNotifyPeerEntry->PeerMACAddr, PeerMACAddr, MAC_ADDR_LEN);
 		WNMNotifyPeerEntry->DialogToken = 1;
