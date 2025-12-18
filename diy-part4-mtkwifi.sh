@@ -92,8 +92,8 @@ chmod 755 package/base-files/files/etc/init.d/swconfig_install
 
 # 默认启用WiFi，系统开机后自动初始化无线功能
 rm -f package/base-files/files/sbin/wifi
-cp -f $GITHUB_WORKSPACE/configfiles/g68-mtkwifi package/base-files/files/etc/init.d/g68-mtkwifi
-chmod 755 package/base-files/files/etc/init.d/g68-mtkwifi
+cp -f $GITHUB_WORKSPACE/configfiles/g68_mtkwifi package/base-files/files/etc/init.d/g68_mtkwifi
+chmod 755 package/base-files/files/etc/init.d/g68_mtkwifi
 
 
 
