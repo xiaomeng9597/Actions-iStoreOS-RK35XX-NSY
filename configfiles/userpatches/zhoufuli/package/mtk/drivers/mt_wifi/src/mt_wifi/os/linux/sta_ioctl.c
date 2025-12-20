@@ -32,7 +32,7 @@
 #include "rtmp_comm.h"
 #include "rt_os_util.h"
 #include "rt_os_net.h"
-/*#include	"rt_config.h" */
+/* #include "rt_config.h" */
 
 #ifdef DBG
 extern int   DebugLevel;
